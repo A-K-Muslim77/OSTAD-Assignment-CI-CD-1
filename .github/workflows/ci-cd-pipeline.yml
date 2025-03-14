@@ -66,7 +66,7 @@ jobs:
             
             - name: Show The Artiface
               run: |
-                ls -a
+                
             - name: Install The Package
               run: npm install
             
@@ -75,7 +75,7 @@ jobs:
                 
                 pm2 status
                 # delete node-app process
-                pm2 delete node-app || true
+                pm2 delete node-app 
                 # pm2 restart all
                 # Create a Background process name node-app
                 pm2 start "npm start" --name="node-app"
