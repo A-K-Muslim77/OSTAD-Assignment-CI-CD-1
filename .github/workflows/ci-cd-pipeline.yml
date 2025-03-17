@@ -83,7 +83,7 @@ jobs:
 
 
                 # Create a Background process name node-app
-                pm2 start "npm start" --name="node-app"
+                pm2 start src/server.js --name "node-app"
 
                 # Save The Process List.
                 pm2 save
